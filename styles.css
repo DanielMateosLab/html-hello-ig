@@ -1,0 +1,65 @@
+html, body {
+    margin: 0
+}
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --app-light-grey: rgb(235, 235, 235);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: white;
+}
+
+/* Horizontal centering */
+.app-title, .post {
+    margin: auto;
+    max-width: 50vw;
+}
+
+
+.app-title {
+    padding: 1.25rem 0;
+}
+
+main {
+    background: var(--app-light-grey);
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 4rem;
+}
+
+/* Post styles */
+.post {
+    background: white;
+    border-radius: 2px;
+}
+
+.post > header {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+.post-title {
+    font-size: 1.25rem;
+    flex-grow: 1;
+    margin: 0;
+}
+.date {
+    color: grey;
+}
+
+.post > img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.post > p {
+    margin: 0;
+    padding: 1.25rem;
+    border-top: var(--app-light-grey) 1px solid;
+}
