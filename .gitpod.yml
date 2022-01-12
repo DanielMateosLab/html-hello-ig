@@ -1,0 +1,6 @@
+ports:
+  - port: 3000
+tasks:
+  - command: |
+      pip3 install flask
+      python3 server.py
